@@ -1,0 +1,24 @@
+{
+  "name": "llm-ai-agent",
+  "version": "1.0.0",
+  "description": "This is the llm base openAi agent",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishalpatel19197/LLM-AI-Agent.git"
+  },
+  "author": "vishal patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishalpatel19197/LLM-AI-Agent/issues"
+  },
+  "homepage": "https://github.com/vishalpatel19197/LLM-AI-Agent#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "openai": "^4.80.1"
+  }
+}
