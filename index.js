@@ -1,11 +1,13 @@
-import OpenAI from "openai";
 import dotenv from "dotenv";
 dotenv.config()
 console.log(process.env.OPENAI_API_KEY)
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-const completion = await openai.chat.completions.create({
-  model: "gpt-3.5-turbo-1106",
-  store: true,
-  messages: [{ role: "user", content: "write a haiku about ai" }],
-});
-console.log(completion.data.choices[0].message.content);
+
+import { GoogleGenerativeAI } from "@google/generative-ai";
+
+const genAI = new GoogleGenerativeAI(process.env.OPENAI_API_KEY);
+const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+
+const prompt = "Explain how AI works";
+
+const result = await model.generateContent(prompt);
+console.log(result.response.text());
