@@ -19,6 +19,9 @@
   "homepage": "https://github.com/vishalpatel19197/LLM-AI-Agent#readme",
   "dependencies": {
     "@google/generative-ai": "^0.21.0",
-    "dotenv": "^16.4.7"
+    "dotenv": "^16.4.7",
+    "mongodb": "^6.13.0",
+    "nodemon": "^3.1.9",
+    "readline-sync": "^1.4.10"
   }
 }
